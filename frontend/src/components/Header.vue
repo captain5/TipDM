@@ -87,8 +87,10 @@
         });
       },
       sureExit: function () {
-        location.href = `${this.httpOauth}/logout?accessToken=${localStorage.accessToken}
-        &redirect=${this.httpClient}`;
+        // location.href = `${this.httpOauth}/logout?accessToken=${localStorage.accessToken}
+        // &redirect=${this.httpClient}`;
+        window.localStorage.removeItem('accessToken');
+        location.href = "/login_banner";
       }
     }
   }
