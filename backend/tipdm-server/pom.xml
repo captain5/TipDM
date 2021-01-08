@@ -343,18 +343,36 @@
 			<groupId>com.weibo</groupId>
 			<artifactId>motan-core</artifactId>
 			<version>${motan.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.alibaba</groupId>
+					<artifactId>fastjson</artifactId>
+				</exclusion>
+        	</exclusions>
 		</dependency>
 
 		<dependency>
 			<groupId>com.weibo</groupId>
 			<artifactId>motan-transport-netty</artifactId>
 			<version>${motan.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.alibaba</groupId>
+					<artifactId>fastjson</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
 			<groupId>com.weibo</groupId>
 			<artifactId>motan-springsupport</artifactId>
 			<version>${motan.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.alibaba</groupId>
+					<artifactId>fastjson</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<!-- RPC end -->
 
