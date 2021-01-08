@@ -5,7 +5,8 @@
       <div class="ver" style="margin-top: 60px; font-size: 2em"><h1 id="projectName">
         {{title}}
       </h1></div>
-      <div class="regLog"><a href="javascript:void(0)" @click="login">登录</a><a href="###" @click="register">注册</a>
+      <!-- <div class="regLog"><a href="javascript:void(0)" @click="login">登录</a><a href="###" @click="register">注册</a> -->
+      <div class="regLog"><a href="javascript:void(0)" @click="login">登录</a>
       </div>
     </div>
     <div id="gBanner" class="gBanner">
